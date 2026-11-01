@@ -1,0 +1,300 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 2,
+    "identityHash": "6c97199cf6eb0233bde9d666881202eb",
+    "entities": [
+      {
+        "tableName": "orders",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `invoiceNo` TEXT NOT NULL, `customerName` TEXT NOT NULL, `customerPhone` TEXT NOT NULL, `customerAddress` TEXT NOT NULL, `district` TEXT NOT NULL, `thana` TEXT NOT NULL, `orderType` TEXT NOT NULL, `priority` TEXT NOT NULL, `paymentStatus` TEXT NOT NULL, `fulfillmentStatus` TEXT NOT NULL, `items` TEXT NOT NULL, `deliveryTier` TEXT NOT NULL, `deliveryCharge` REAL NOT NULL, `advanceAmount` REAL NOT NULL, `discountAmount` REAL NOT NULL, `isScheduled` INTEGER NOT NULL, `requestedDeliveryDate` TEXT NOT NULL, `doNotDispatchBeforeDate` TEXT NOT NULL, `specialInstructions` TEXT NOT NULL, `courierService` TEXT NOT NULL, `courierTrackingId` TEXT NOT NULL, `courierSyncStatus` TEXT NOT NULL, `riderNote` TEXT NOT NULL, `isTrashed` INTEGER NOT NULL, `createdAt` INTEGER NOT NULL, `updatedAt` INTEGER NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "invoiceNo",
+            "columnName": "invoiceNo",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "customerName",
+            "columnName": "customerName",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "customerPhone",
+            "columnName": "customerPhone",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "customerAddress",
+            "columnName": "customerAddress",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "district",
+            "columnName": "district",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "thana",
+            "columnName": "thana",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "orderType",
+            "columnName": "orderType",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "priority",
+            "columnName": "priority",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "paymentStatus",
+            "columnName": "paymentStatus",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "fulfillmentStatus",
+            "columnName": "fulfillmentStatus",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "items",
+            "columnName": "items",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "deliveryTier",
+            "columnName": "deliveryTier",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "deliveryCharge",
+            "columnName": "deliveryCharge",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "advanceAmount",
+            "columnName": "advanceAmount",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "discountAmount",
+            "columnName": "discountAmount",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isScheduled",
+            "columnName": "isScheduled",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "requestedDeliveryDate",
+            "columnName": "requestedDeliveryDate",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "doNotDispatchBeforeDate",
+            "columnName": "doNotDispatchBeforeDate",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "specialInstructions",
+            "columnName": "specialInstructions",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "courierService",
+            "columnName": "courierService",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "courierTrackingId",
+            "columnName": "courierTrackingId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "courierSyncStatus",
+            "columnName": "courierSyncStatus",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "riderNote",
+            "columnName": "riderNote",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isTrashed",
+            "columnName": "isTrashed",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "createdAt",
+            "columnName": "createdAt",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "updatedAt",
+            "columnName": "updatedAt",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_orders_invoiceNo",
+            "unique": false,
+            "columnNames": [
+              "invoiceNo"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_orders_invoiceNo` ON `${TABLE_NAME}` (`invoiceNo`)"
+          },
+          {
+            "name": "index_orders_customerPhone",
+            "unique": false,
+            "columnNames": [
+              "customerPhone"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_orders_customerPhone` ON `${TABLE_NAME}` (`customerPhone`)"
+          },
+          {
+            "name": "index_orders_fulfillmentStatus",
+            "unique": false,
+            "columnNames": [
+              "fulfillmentStatus"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_orders_fulfillmentStatus` ON `${TABLE_NAME}` (`fulfillmentStatus`)"
+          },
+          {
+            "name": "index_orders_orderType",
+            "unique": false,
+            "columnNames": [
+              "orderType"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_orders_orderType` ON `${TABLE_NAME}` (`orderType`)"
+          },
+          {
+            "name": "index_orders_isTrashed",
+            "unique": false,
+            "columnNames": [
+              "isTrashed"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_orders_isTrashed` ON `${TABLE_NAME}` (`isTrashed`)"
+          }
+        ]
+      },
+      {
+        "tableName": "catalog_products",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `name` TEXT NOT NULL, `category` TEXT NOT NULL, `basePrice` REAL NOT NULL, `availableSizes` TEXT NOT NULL, `availableColors` TEXT NOT NULL, `variantPhotos` TEXT NOT NULL, `stockStatus` TEXT NOT NULL, `photoUri` TEXT NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "category",
+            "columnName": "category",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "basePrice",
+            "columnName": "basePrice",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "availableSizes",
+            "columnName": "availableSizes",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "availableColors",
+            "columnName": "availableColors",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "variantPhotos",
+            "columnName": "variantPhotos",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "stockStatus",
+            "columnName": "stockStatus",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "photoUri",
+            "columnName": "photoUri",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '6c97199cf6eb0233bde9d666881202eb')"
+    ]
+  }
+}

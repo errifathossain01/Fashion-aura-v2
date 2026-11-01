@@ -1,0 +1,6 @@
+{
+  "name": "Fashion Aura",
+  "description": "F-commerce order management and boutique fulfillment app for Bangladeshi fashion merchants with Steadfast Courier integration.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

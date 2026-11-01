@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "853963298426",
+    "project_id": "fashion-aura-5ef1e",
+    "storage_bucket": "fashion-aura-5ef1e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:853963298426:android:3631da83d1e525673a8dc3",
+        "android_client_info": {
+          "package_name": "com.aistudio.fashionaura.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUEEiopY9kPjx9v9P-MOG4wCy5B4Pcycs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:853963298426:android:28dbf17e6cc2ead33a8dc3",
+        "android_client_info": {
+          "package_name": "com.fashionaura.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUEEiopY9kPjx9v9P-MOG4wCy5B4Pcycs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
